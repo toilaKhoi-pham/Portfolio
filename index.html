@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phạm Hữu Khôi — Personal Development Portfolio | VNUK</title>
+  <meta name="description" content="Personal Development Portfolio for VNUK. Focus: Computer Science & Applied Data Science by Pham Huu Khoi.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Top Reading Progress Indicator -->
+  <div id="scroll-progress-container" aria-hidden="true">
+    <div id="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-monogram">
+        <span class="brand-title">PHẠM HỮU KHÔI</span>
+        <span class="brand-subtitle">VNUK PDP</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#about-me" class="nav-link">About</a>
+        <a href="#starting-point" class="nav-link">01 Skills</a>
+        <a href="#how-i-think" class="nav-link">02 Thinking</a>
+        <a href="#what-i-stand-for" class="nav-link">03 Values</a>
+        <a href="#taking-care" class="nav-link">04 Well-being</a>
+        <a href="#where-i-am-going" class="nav-link">05 Goals</a>
+        <a href="#working-with-others" class="nav-link">06 Leadership</a>
+        <a href="#professional-identity" class="nav-link">07 Brand</a>
+        <a href="#looking-back" class="nav-link">08 Growth</a>
+        <a href="#evidence-archive" class="nav-link nav-highlight">Archive</a>
+      </nav>
+
+      <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="drawer-title">Navigation</span>
+      <button class="drawer-close" id="drawerClose">&times;</button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="#hero" class="drawer-link">Cover</a></li>
+      <li><a href="#about-me" class="drawer-link">About Me</a></li>
+      <li><a href="#starting-point" class="drawer-link">01. Skills Audit</a></li>
+      <li><a href="#how-i-think" class="drawer-link">02. Critical Thinking</a></li>
+      <li><a href="#what-i-stand-for" class="drawer-link">03. Core Values</a></li>
+      <li><a href="#taking-care" class="drawer-link">04. Well-Being</a></li>
+      <li><a href="#where-i-am-going" class="drawer-link">05. SMART Goals</a></li>
+      <li><a href="#working-with-others" class="drawer-link">06. SWOT & Leadership</a></li>
+      <li><a href="#professional-identity" class="drawer-link">07. Personal Brand</a></li>
+      <li><a href="#looking-back" class="drawer-link">08. Reflection</a></li>
+      <li><a href="#evidence-archive" class="drawer-link">Evidence Archive</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <p>VNUK — Personal Development Planning</p>
+    </div>
+  </aside>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        
+        <div class="hero-header-meta">
+          <span class="tag-pill">Personal Development Planning</span>
+          <span class="tag-secondary tag-pill">VNUK Institute for Research & Executive Education</span>
+          <span class="tag-date">2024–2025</span>
+        </div>
+
+        <div class="hero-headline-wrap">
+          <h1 class="hero-display-title">PHẠM HỮU KHÔI<br><span class="accent-highlight">THE MAKING OF ME</span></h1>
+          <p class="hero-lead-subtitle">Computer Science & Applied Data Science · University of Danang</p>
+        </div>
+
+        <!-- Featured Hero Visual Banner -->
+        <div class="hero-showcase-card">
+          <div class="hero-image-wrap">
+            <img src="assets/images/Clubfair.jpg" alt="Active student engagement at VNUK Club Fair" class="hero-img" loading="eager">
+          </div>
+          <div class="hero-image-caption">
+            <div class="caption-content">
+              <strong>Evidence #01:</strong> VNUK Club Fair Outreach — Coordinating campus engagement and public communication.
+            </div>
+            <a href="#evidence-archive" class="caption-link" onclick="openEvidenceModal('Clubfair.jpg')">View Details &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Quick Milestone Snapshot -->
+        <div class="hero-milestone-bar">
+          <div class="milestone-item">
+            <span class="milestone-num">08</span>
+            <span class="milestone-label">Modules</span>
+          </div>
+          <div class="milestone-divider"></div>
+          <div class="milestone-item">
+            <span class="milestone-num">06</span>
+            <span class="milestone-label">Field Artifacts</span>
+          </div>
+          <div class="milestone-divider"></div>
+          <div class="milestone-item">
+            <span class="milestone-num">100%</span>
+            <span class="milestone-label">Empirical Record</span>
+          </div>
+          <div class="milestone-divider"></div>
+          <div class="milestone-item">
+            <span class="milestone-num">2025</span>
+            <span class="milestone-label">SMART Target</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="content-section" id="about-me">
+      <div class="container">
+        
+        <div class="section-header-block">
+          <div class="section-number-tag">PROFILE</div>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-tagline">Academic profile, major focus, and direct contact details.</p>
+        </div>
+
+        <div class="about-profile-card">
+          <div class="about-avatar-col">
+            <div class="about-avatar-frame">
+              <img src="assets/images/myAvatar.jpg" alt="Pham Huu Khoi" class="about-avatar-img">
+            </div>
+            <div class="about-quick-specs">
+              <div class="spec-item">
+                <span class="spec-label">Full Name</span>
+                <span class="spec-val">Phạm Hữu Khôi</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Role</span>
+                <span class="spec-val">Undergraduate Researcher</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-details-col">
+            <div class="about-headline">
+              <h3 class="about-name">Phạm Hữu Khôi</h3>
+              <p class="about-role">Computer Science · Applied Data Science</p>
+            </div>
+
+            <p class="about-summary-text">
+              Undergraduate student at the VN-UK Institute for Research and Executive Education (VNUK), The University of Danang. Passionate about machine learning pipelines, empirical data modeling, and developing robust software systems that solve practical operational bottlenecks.
+            </p>
+
+            <!-- Clean Contact Grid -->
+            <div class="about-contacts-grid">
+              <div class="contact-pill-item">
+                <span class="contact-label">Email</span>
+                <a href="mailto:hukopham101070@gmail.com" class="contact-link">hukopham101070@gmail.com</a>
+              </div>
+
+              <div class="contact-pill-item">
+                <span class="contact-label">Phone</span>
+                <a href="tel:0917969280" class="contact-link">0917969280</a>
+              </div>
+
+              <div class="contact-pill-item">
+                <span class="contact-label">Institution</span>
+                <span class="contact-val">VNUK (Viện Nghiên cứu & Đào tạo Việt - Anh, ĐH Đà Nẵng)</span>
+              </div>
+
+              <div class="contact-pill-item">
+                <span class="contact-label">Major Focus</span>
+                <span class="contact-val">Computer Science; Applied Data Science</span>
+              </div>
+            </div>
+
+            <div class="about-badges-bar">
+              <span class="skill-chip">Data Analytics</span>
+              <span class="skill-chip">Machine Learning</span>
+              <span class="skill-chip">Python Pipelines</span>
+              <span class="skill-chip">Team Coordination</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 01: SKILL AUDIT -->
+    <section class="content-section bg-alt" id="starting-point">
+      <div class="container">
+        
+        <div class="section-header-block">
+          <div class="section-number-tag">01 / AUDIT</div>
+          <h2 class="section-title">The Starting Point</h2>
+          <p class="section-tagline">Baseline competency assessment and growth priorities.</p>
+        </div>
+
+        <div class="editorial-grid two-column-balanced">
+          <div>
+            <h3 class="subsection-title">Baseline Evaluation</h3>
+            <p class="body-text">
+              Diagnostic assessment calibrated through peer appraisals, coursework delivery, and campus coordination roles:
+            </p>
+            <ul class="analysis-list">
+              <li><strong>Analytical Problem Solving (4.0/5.0):</strong> Strong technical troubleshooting and algorithmic deconstruction.</li>
+              <li><strong>Collaborative Teamwork (4.2/5.0):</strong> Reliable cross-functional execution in student organizations.</li>
+              <li><strong>Schedule Management (3.2/5.0):</strong> Critical focus area; vulnerable to deadline compression during peak multi-project sprints.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <span class="card-badge">Competency Matrix (Scale 1.0 - 5.0)</span>
+            <div class="skill-meter-list" style="margin-top: 1rem;">
+              <div class="skill-meter-item">
+                <div class="skill-meter-header">
+                  <span class="skill-name">Collaborative Teamwork</span>
+                  <span class="skill-score">4.2</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 84%;"></div></div>
+              </div>
+              <div class="skill-meter-item">
+                <div class="skill-meter-header">
+                  <span class="skill-name">Analytical Problem Solving</span>
+                  <span class="skill-score">4.0</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 80%;"></div></div>
+              </div>
+              <div class="skill-meter-item">
+                <div class="skill-meter-header">
+                  <span class="skill-name">Adaptability</span>
+                  <span class="skill-score">3.9</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 78%;"></div></div>
+              </div>
+              <div class="skill-meter-item">
+                <div class="skill-meter-header">
+                  <span class="skill-name">Communication</span>
+                  <span class="skill-score">3.8</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 76%;"></div></div>
+              </div>
+              <div class="skill-meter-item">
+                <div class="skill-meter-header">
+                  <span class="skill-name">Schedule Management (Growth Focus)</span>
+                  <span class="skill-score">3.2</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill warning-fill" style="width: 64%;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 02: CRITICAL THINKING -->
+    <section class="content-section" id="how-i-think">
+      <div class="container">
+
+        <div class="section-header-block">
+          <div class="section-number-tag">02 / COGNITION</div>
+          <h2 class="section-title">How I Think</h2>
+          <p class="section-tagline">Evidence-based reasoning in student innovation.</p>
+        </div>
+
+        <div class="case-study-hero">
+          <div class="case-img-container">
+            <img src="assets/images/innovation_SV.jpg" alt="Student presentation at Innovation SV competition" class="case-img">
+            <div class="caption-overlay">Evidence #02: Student Innovation Pitch & Research Defense</div>
+          </div>
+          <div>
+            <h3 class="case-headline">Assumption vs Reality</h3>
+            <p class="case-lead">
+              During the student innovation initiative, our technical team initially assumed mandatory mobile app registrations would streamline entry. Field testing revealed a 40% user drop-off due to network latency and installation friction.
+            </p>
+            <div class="metric-highlight">
+              <span class="highlight-number">85%</span>
+              <span class="highlight-desc">Friction reduction achieved after switching from an app requirement to an accessible browser QR badge paired with physical help desks.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5-Step Process -->
+        <div class="cognitive-stepper">
+          <div class="step-card">
+            <div class="step-badge">1. Assumption</div>
+            <div class="step-title">App Supremacy</div>
+            <p class="step-body">Assumed all participants favored mobile app workflows over manual desks.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-badge">2. Evidence</div>
+            <div class="step-title">Field Friction</div>
+            <p class="step-body">Trial data showed Wi-Fi choke points and participant resistance.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-badge">3. Perspective</div>
+            <div class="step-title">User Inclusivity</div>
+            <p class="step-body">Consulted non-technical freshmen who prioritized immediacy over novelty.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-badge">4. Decision</div>
+            <div class="step-title">Hybrid Solution</div>
+            <p class="step-body">Adopted lightweight offline browser QR passes with physical support.</p>
+          </div>
+          <div class="step-card step-highlight">
+            <div class="step-badge">5. Takeaway</div>
+            <div class="step-title">Empathy First</div>
+            <p class="step-body">Always stress-test engineering assumptions against end-user accessibility.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 03: CORE VALUES & ETHICS -->
+    <section class="content-section bg-alt" id="what-i-stand-for">
+      <div class="container">
+
+        <div class="section-header-block">
+          <div class="section-number-tag">03 / ETHICS</div>
+          <h2 class="section-title">What I Stand For</h2>
+          <p class="section-tagline">Core principles and ethical decision-making.</p>
+        </div>
+
+        <div class="values-quad-grid">
+          <div class="value-card">
+            <div class="value-index">01</div>
+            <h3 class="value-name">Honesty</h3>
+            <p class="value-desc">Accurate representation of research data and giving full credit to peer collaborators.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-index">02</div>
+            <h3 class="value-name">Ownership</h3>
+            <p class="value-desc">Accepting direct responsibility for project deliverables without shifting blame.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-index">03</div>
+            <h3 class="value-name">Inclusion</h3>
+            <p class="value-desc">Creating structured discussion formats so less vocal members contribute safely.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-index">04</div>
+            <h3 class="value-name">Discipline</h3>
+            <p class="value-desc">Consistent technical follow-through and adherence to code quality standards.</p>
+          </div>
+        </div>
+
+        <div class="dilemma-box">
+          <h3 class="dilemma-title">Ethical Case: Critical Deadline Integrity</h3>
+          <div class="dilemma-content">
+            <p>
+              <strong>Context:</strong> When a core teammate experienced a family emergency 48 hours prior to our coursework submission, our group rejected fabricating missing citations. Instead, we redistributed the workload internally while submitting a transparent explanatory memorandum to our faculty supervisor.
+            </p>
+            <p>
+              <strong>Takeaway:</strong> Professional integrity means rejecting false choices between expediency and harshness in favor of compassionate accountability.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 04: WELL-BEING -->
+    <section class="content-section" id="taking-care">
+      <div class="container">
+
+        <div class="section-header-block">
+          <div class="section-number-tag">04 / SUSTAINABILITY</div>
+          <h2 class="section-title">Taking Care of Myself</h2>
+          <p class="section-tagline">Physical vitality, cognitive boundaries, and community support.</p>
+        </div>
+
+        <div class="wellbeing-triad">
+          <!-- Physical -->
+          <div class="wellbeing-card">
+            <div class="wellbeing-img-wrap">
+              <img src="assets/images/3x3 tournament.jpg" alt="3x3 Basketball tournament" class="wellbeing-img">
+              <div class="pillar-tag">Physical</div>
+            </div>
+            <div class="wellbeing-body">
+              <h3 class="pillar-title">Athletic Stamina</h3>
+              <p class="pillar-text">Regular 3x3 basketball practice provides high-intensity cardiovascular conditioning and resets cognitive focus after long coding sessions.</p>
+              <div class="habit-check">- 3x weekly competitive sessions</div>
+              <div class="habit-check">- Consistent 7-hour sleep window</div>
+            </div>
+          </div>
+
+          <!-- Emotional -->
+          <div class="wellbeing-card">
+            <div class="wellbeing-img-wrap">
+              <img src="assets/images/noel.jpg" alt="Christmas celebration with university peers" class="wellbeing-img">
+              <div class="pillar-tag">Emotional</div>
+            </div>
+            <div class="wellbeing-body">
+              <h3 class="pillar-title">Community Connection</h3>
+              <p class="pillar-text">Participating in campus milestones like the Christmas gathering strengthens peer support and prevents isolation during high-stress periods.</p>
+              <div class="habit-check">- Active peer group engagement</div>
+              <div class="habit-check">- Open retrospective check-ins</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 05: GOALS & TIME AUDIT -->
+    <section class="content-section bg-alt" id="where-i-am-going">
+      <div class="container">
+
+        <div class="section-header-block">
+          <div class="section-number-tag">05 / TRAJECTORY</div>
+          <h2 class="section-title">Where I Am Going</h2>
+          <p class="section-tagline">Weekly time allocation and SMART capstone plan.</p>
+        </div>
+
+        <div class="editorial-grid two-column-balanced">
+          <div>
+            <h3 class="subsection-title">Time Audit (168h Weekly Total)</h3>
+            <div class="time-audit-bars">
+              <div class="time-row">
+                <div class="time-meta"><span>Academic & Projects</span><span>42 hrs (25%)</span></div>
+                <div class="time-bar-bg"><div class="time-bar-fill" style="width: 25%;"></div></div>
+              </div>
+              <div class="time-row">
+                <div class="time-meta"><span>Sleep & Recovery</span><span>49 hrs (29%)</span></div>
+                <div class="time-bar-bg"><div class="time-bar-fill" style="width: 29%;"></div></div>
+              </div>
+              <div class="time-row">
+                <div class="time-meta"><span>Leadership & Club Activities</span><span>18 hrs (11%)</span></div>
+                <div class="time-bar-bg"><div class="time-bar-fill" style="width: 11%;"></div></div>
+              </div>
+              <div class="time-row">
+                <div class="time-meta"><span>Sports & Conditioning</span><span>8 hrs (5%)</span></div>
+                <div class="time-bar-bg"><div class="time-bar-fill" style="width: 5%;"></div></div>
+              </div>
+              <div class="time-row">
+                <div class="time-meta"><span>Digital Reclaim Target</span><span>Reclaiming 6 hrs for study</span></div>
+                <div class="time-bar-bg"><div class="time-bar-fill" style="width: 9%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="subsection-title">Career Direction</h3>
+            <p class="body-text">
+              Targeting specialization in <strong>Data Science & Applied Machine Learning</strong>. Grounded by insights from events like the AI & Big Data Symposium, focusing on production-grade analytical pipelines.
+            </p>
+            <div style="margin-top: 0.5rem;">
+              <a href="#evidence-archive" class="caption-link" onclick="openEvidenceModal('AI_BigData.jpg')">View AI Symposium Artifact &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SMART Grid -->
+        <div class="smart-grid" style="margin-top: 1.5rem;">
+          <div class="smart-card">
+            <div class="smart-letter">S</div>
+            <div class="smart-label">Specific</div>
+            <p class="smart-text">Build an end-to-end data pipeline evaluating campus event metrics.</p>
+          </div>
+          <div class="smart-card">
+            <div class="smart-letter">M</div>
+            <div class="smart-label">Measurable</div>
+            <p class="smart-text">Maintain >85% model accuracy and complete 2 verified Git repositories.</p>
+          </div>
+          <div class="smart-card">
+            <div class="smart-letter">A</div>
+            <div class="smart-label">Achievable</div>
+            <p class="smart-text">Backed by 6 weekly protected coding hours reclaimed from screen audit.</p>
+          </div>
+          <div class="smart-card">
+            <div class="smart-letter">R</div>
+            <div class="smart-label">Relevant</div>
+            <p class="smart-text">Directly supports junior data engineering internship applications.</p>
+          </div>
+          <div class="smart-card">
+            <div class="smart-letter">T</div>
+            <div class="smart-label">Time-bound</div>
+            <p class="smart-text">Final milestone deployment target: June 30, 2025.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 06: SWOT & LEADERSHIP -->
+    <section class="content-section" id="working-with-others">
+      <div class="container">
+
+        <div class="section-header-block">
+          <div class="section-number-tag">06 / COLLABORATION</div>
+          <h2 class="section-title">How I Work with Others</h2>
+          <p class="section-tagline">Personal SWOT matrix and collaborative leadership.</p>
+        </div>
+
+        <div class="swot-grid">
+          <div class="swot-quadrant">
+            <div class="swot-badge">STRENGTHS (Internal)</div>
+            <ul class="swot-list">
+              <li><strong>Analytical Rigor:</strong> Backs strategic choices with verified data.</li>
+              <li><strong>Reliability:</strong> Consistent on-time completion of assigned tasks.</li>
+              <li><strong>Empathy:</strong> Fosters collaborative psychological safety in teams.</li>
+            </ul>
+          </div>
+
+          <div class="swot-quadrant">
+            <div class="swot-badge">WEAKNESSES (Internal)</div>
+            <ul class="swot-list">
+              <li><strong>Over-analysis:</strong> Delaying execution to seek excessive preliminary data.</li>
+              <li><strong>Delegation:</strong> Reluctance to transfer high-stakes components to others.</li>
+              <li><strong>Conflict Delay:</strong> Softening constructive criticism to preserve harmony.</li>
+            </ul>
+          </div>
+
+          <div class="swot-quadrant">
+            <div class="swot-badge">OPPORTUNITIES (External)</div>
+            <ul class="swot-list">
+              <li><strong>VNUK Research:</strong> Student innovation and research lab incubators.</li>
+              <li><strong>Cross-disciplinary Labs:</strong> Teaming with business and design cohorts.</li>
+              <li><strong>Industry Tech Seminars:</strong> Direct exposure to engineering leaders.</li>
+            </ul>
+          </div>
+
+          <div class="swot-quadrant">
+            <div class="swot-badge">THREATS (External)</div>
+            <ul class="swot-list">
+              <li><strong>Framework Velocity:</strong> Rapid AI evolution requiring continuous retraining.</li>
+              <li><strong>Schedule Crunch:</strong> Coursework milestones colliding with event dates.</li>
+              <li><strong>Variable Peer Drive:</strong> Uneven commitment levels in random project teams.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Leadership in action -->
+        <div class="card" style="margin-top: 1.5rem;">
+          <h3 class="subsection-title">Leadership Case: Club Fair Volunteer Squad</h3>
+          <p class="body-text">
+            Coordinated 12 volunteers by designing paired shift rotations (booth anchors + roaming ambassadors) and scheduled 10-minute rest intervals. Achieved peak student engagement with zero volunteer burnout.
+          </p>
+          <a href="#evidence-archive" class="caption-link" onclick="openEvidenceModal('clubfair2.jpg')">View Volunteer Squad Artifact &rarr;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 07: PERSONAL BRAND -->
+    <section class="content-section bg-alt" id="professional-identity">
+      <div class="container">
+
+        <div class="section-header-block">
+          <div class="section-number-tag">07 / IDENTITY</div>
+          <h2 class="section-title">The Professional I Am Becoming</h2>
+          <p class="section-tagline">Signature brand statement and professional conduct standards.</p>
+        </div>
+
+        <div class="brand-statement-card">
+          <img src="assets/images/myAvatar.jpg" alt="Pham Huu Khoi" class="brand-avatar-img">
+          <p class="statement-body">
+            &ldquo;I strive to be known as an analytical problem solver who marries computational rigor with active empathy &mdash; dependable, clear in communication, and focused on delivering lasting value.&rdquo;
+          </p>
+          <div style="font-size: 0.85rem; font-weight: 700;">Phạm Hữu Khôi</div>
+          <div style="font-size: 0.75rem; color: var(--text-light);">Computer Science · VNUK</div>
+        </div>
+
+        <div class="professionalism-grid">
+          <div class="pro-card">
+            <div class="pro-num">01</div>
+            <h3 class="pro-title">Punctual Clarity</h3>
+            <p class="pro-desc">Proactive milestone dispatches and signaling hurdles 48 hours prior to deadlines.</p>
+          </div>
+          <div class="pro-card">
+            <div class="pro-num">02</div>
+            <h3 class="pro-title">Feedback Receptivity</h3>
+            <p class="pro-desc">Treating code reviews and faculty critiques as high-value diagnostic growth data.</p>
+          </div>
+          <div class="pro-card">
+            <div class="pro-num">03</div>
+            <h3 class="pro-title">Team Catalyst</h3>
+            <p class="pro-desc">Translating algorithmic constraints into clear, actionable requirements for peers.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 08: GROWTH & TRANSFORMATION -->
+    <section class="content-section" id="looking-back">
+      <div class="container">
+
+        <div class="section-header-block">
+          <div class="section-number-tag">08 / GROWTH</div>
+          <h2 class="section-title">Looking Back, Moving Forward</h2>
+          <p class="section-tagline">Baseline comparison and future priorities.</p>
+        </div>
+
+        <div class="card">
+          <div class="table-responsive">
+            <table class="editorial-table">
+              <thead>
+                <tr>
+                  <th style="width: 25%;">Vector</th>
+                  <th style="width: 37%;">At The Beginning</th>
+                  <th style="width: 38%;">Now</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Mindset</strong></td>
+                  <td>Equated worth with effortless individual results; hesitated to ask for help.</td>
+                  <td>Growth mindset; embraces constructive failure as diagnostic feedback.</td>
+                </tr>
+                <tr>
+                  <td><strong>Critical Thinking</strong></td>
+                  <td>Relied on intuitive assumptions and technological novelty.</td>
+                  <td>Empirically tests premises against real-world user friction.</td>
+                </tr>
+                <tr>
+                  <td><strong>Well-Being</strong></td>
+                  <td>Viewed rest as guilty inactivity; suffered sleep fragmentation.</td>
+                  <td>Protects athletic conditioning and 7-hour restorative sleep habits.</td>
+                </tr>
+                <tr>
+                  <td><strong>Future Plan</strong></td>
+                  <td>Vague interest in technology without structured milestones.</td>
+                  <td>Targeted SMART roadmap in Applied Data Science for 2025.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 1.25rem;">
+          <h3 class="subsection-title">Next Growth Priority: Constructive Conflict</h3>
+          <p class="body-text">
+            My next focus is stepping assertively into technical discussions &mdash; advocating for evidence-backed solutions even when in polite disagreement with group consensus.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CURATED EVIDENCE ARCHIVE (ALL 6 ARTIFACTS) -->
+    <section class="content-section bg-alt" id="evidence-archive">
+      <div class="container">
+
+        <div class="section-header-block" style="text-align: center;">
+          <div class="section-number-tag">DOCUMENTARY ARCHIVE</div>
+          <h2 class="section-title">Curated Evidence Archive</h2>
+          <p class="section-tagline">Documented field engagements backing all portfolio claims.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="archive-filter-bar">
+          <button class="filter-btn active" data-filter="all">All (6)</button>
+          <button class="filter-btn" data-filter="leadership">Leadership</button>
+          <button class="filter-btn" data-filter="academic">Academic & Tech</button>
+          <button class="filter-btn" data-filter="wellbeing">Well-Being</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="archive-gallery-grid" id="galleryGrid">
+
+          <!-- Artifact 1: Clubfair.jpg -->
+          <article class="artifact-card" data-category="leadership" data-image="Clubfair.jpg" onclick="openEvidenceModal('Clubfair.jpg')">
+            <div class="artifact-thumb-wrap">
+              <img src="assets/images/Clubfair.jpg" alt="University Club Fair" class="artifact-thumb" loading="lazy">
+              <span class="category-badge">Leadership</span>
+            </div>
+            <div class="artifact-card-content">
+              <span class="artifact-index">Artifact #01</span>
+              <h3 class="artifact-card-title">VNUK Club Fair Outreach</h3>
+              <p class="artifact-snippet">Coordinating public engagement and student booth logistics during orientation.</p>
+              <div class="artifact-footer-meta">
+                <span class="proven-skill">Facilitation</span>
+                <span class="view-btn">Inspect &rarr;</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Artifact 2: clubfair2.jpg -->
+          <article class="artifact-card" data-category="leadership" data-image="clubfair2.jpg" onclick="openEvidenceModal('clubfair2.jpg')">
+            <div class="artifact-thumb-wrap">
+              <img src="assets/images/clubfair2.jpg" alt="Club fair squad coordination" class="artifact-thumb" loading="lazy">
+              <span class="category-badge">Leadership</span>
+            </div>
+            <div class="artifact-card-content">
+              <span class="artifact-index">Artifact #02</span>
+              <h3 class="artifact-card-title">Volunteer Squad Mobilization</h3>
+              <p class="artifact-snippet">Organizing paired volunteer shifts and structured rest breaks for sustained team morale.</p>
+              <div class="artifact-footer-meta">
+                <span class="proven-skill">Team Coordination</span>
+                <span class="view-btn">Inspect &rarr;</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Artifact 3: innovation_SV.jpg -->
+          <article class="artifact-card" data-category="academic" data-image="innovation_SV.jpg" onclick="openEvidenceModal('innovation_SV.jpg')">
+            <div class="artifact-thumb-wrap">
+              <img src="assets/images/innovation_SV.jpg" alt="Student innovation competition" class="artifact-thumb" loading="lazy">
+              <span class="category-badge">Academic</span>
+            </div>
+            <div class="artifact-card-content">
+              <span class="artifact-index">Artifact #03</span>
+              <h3 class="artifact-card-title">Student Innovation Pitch</h3>
+              <p class="artifact-snippet">Defending data models and navigating jury cross-examinations with empirical testing.</p>
+              <div class="artifact-footer-meta">
+                <span class="proven-skill">Critical Defense</span>
+                <span class="view-btn">Inspect &rarr;</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Artifact 4: AI_BigData.jpg -->
+          <article class="artifact-card" data-category="academic" data-image="AI_BigData.jpg" onclick="openEvidenceModal('AI_BigData.jpg')">
+            <div class="artifact-thumb-wrap">
+              <img src="assets/images/AI_BigData.jpg" alt="AI & Big Data conference" class="artifact-thumb" loading="lazy">
+              <span class="category-badge">Academic</span>
+            </div>
+            <div class="artifact-card-content">
+              <span class="artifact-index">Artifact #04</span>
+              <h3 class="artifact-card-title">AI & Big Data Symposium</h3>
+              <p class="artifact-snippet">Extracting applied pipeline patterns from industry case studies to inform project scope.</p>
+              <div class="artifact-footer-meta">
+                <span class="proven-skill">Technical Vision</span>
+                <span class="view-btn">Inspect &rarr;</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Artifact 5: 3x3 tournament.jpg -->
+          <article class="artifact-card" data-category="wellbeing" data-image="3x3 tournament.jpg" onclick="openEvidenceModal('3x3 tournament.jpg')">
+            <div class="artifact-thumb-wrap">
+              <img src="assets/images/3x3 tournament.jpg" alt="3x3 Basketball tournament" class="artifact-thumb" loading="lazy">
+              <span class="category-badge">Well-Being</span>
+            </div>
+            <div class="artifact-card-content">
+              <span class="artifact-index">Artifact #05</span>
+              <h3 class="artifact-card-title">3x3 Basketball Tournament</h3>
+              <p class="artifact-snippet">Sustaining stamina and physical decompression through scheduled athletic competition.</p>
+              <div class="artifact-footer-meta">
+                <span class="proven-skill">Physical Health</span>
+                <span class="view-btn">Inspect &rarr;</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Artifact 6: noel.jpg -->
+          <article class="artifact-card" data-category="wellbeing" data-image="noel.jpg" onclick="openEvidenceModal('noel.jpg')">
+            <div class="artifact-thumb-wrap">
+              <img src="assets/images/noel.jpg" alt="Christmas gathering" class="artifact-thumb" loading="lazy">
+              <span class="category-badge">Well-Being</span>
+            </div>
+            <div class="artifact-card-content">
+              <span class="artifact-index">Artifact #06</span>
+              <h3 class="artifact-card-title">Campus Christmas Celebration</h3>
+              <p class="artifact-snippet">Strengthening peer connection and emotional belonging through community traditions.</p>
+              <div class="artifact-footer-meta">
+                <span class="proven-skill">Social Support</span>
+                <span class="view-btn">Inspect &rarr;</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Evidence Detail Modal -->
+  <div class="modal-backdrop" id="evidenceModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modalClose" aria-label="Close">&times;</button>
+      
+      <div class="modal-grid">
+        <div class="modal-visual-side">
+          <img src="" alt="Artifact view" id="modalImg" class="modal-img">
+        </div>
+        
+        <div class="modal-text-side">
+          <span class="modal-badge" id="modalCategoryBadge">Category</span>
+          <h3 class="modal-title" id="modalTitle">Title</h3>
+          
+          <div class="modal-caption-sheet">
+            <div class="caption-row">
+              <span class="sheet-label">Setting & Context</span>
+              <p class="sheet-text" id="modalContext"></p>
+            </div>
+            <div class="caption-row">
+              <span class="sheet-label">My Role</span>
+              <p class="sheet-text" id="modalRole"></p>
+            </div>
+            <div class="caption-row">
+              <span class="sheet-label">What This Demonstrates</span>
+              <p class="sheet-text" id="modalProves"></p>
+            </div>
+            <div class="caption-row">
+              <span class="sheet-label">Growth Outcome</span>
+              <p class="sheet-text" id="modalLesson"></p>
+            </div>
+          </div>
+
+          <div style="margin-top: auto;">
+            <button class="btn btn-secondary" id="modalDoneBtn">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Academic Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-col">
+        <span class="footer-brand-title">PHẠM HỮU KHÔI</span>
+        <p class="footer-desc">
+          Personal Development Portfolio submitted for the PDP curriculum at VNUK (Viện Nghiên cứu và Đào tạo Việt - Anh, Đại học Đà Nẵng).
+        </p>
+        <div style="font-size: 0.78rem; line-height: 1.6; margin-bottom: 0.6rem;">
+          <div><strong>Major:</strong> Computer Science; Applied Data Science</div>
+          <div><strong>Email:</strong> <a href="mailto:hukopham101070@gmail.com">hukopham101070@gmail.com</a></div>
+          <div><strong>Phone:</strong> <a href="tel:0917969280">0917969280</a></div>
+        </div>
+        <span class="footer-copy">&copy; 2024–2025 Phạm Hữu Khôi. All rights reserved.</span>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#starting-point">01. Skills</a></li>
+          <li><a href="#how-i-think">02. Thinking</a></li>
+          <li><a href="#what-i-stand-for">03. Values</a></li>
+          <li><a href="#taking-care">04. Well-Being</a></li>
+          <li><a href="#where-i-am-going">05. Goals</a></li>
+          <li><a href="#working-with-others">06. Leadership</a></li>
+          <li><a href="#professional-identity">07. Brand</a></li>
+          <li><a href="#looking-back">08. Growth</a></li>
+          <li><a href="#evidence-archive">Archive</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Academic Record</h4>
+        <ul class="meta-list">
+          <li><strong>Course:</strong> Personal Development Planning</li>
+          <li><strong>Institution:</strong> VNUK, The University of Danang</li>
+          <li><strong>Author:</strong> Phạm Hữu Khôi</li>
+          <li><strong>Language:</strong> English</li>
+        </ul>
+        <div style="margin-top: 1rem;">
+          <a href="#hero" class="caption-link">&uarr; Back to Top</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
